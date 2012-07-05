@@ -9,7 +9,7 @@ class AboutAsserts(Koan):
         """
         We shall contemplate truth by testing reality, via asserts.
         """
-        self.assertTrue(False) # This should be true
+        self.assertTrue(True) # This should be true
     
     def test_assert_with_message(self):
         """

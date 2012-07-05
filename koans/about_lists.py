@@ -58,18 +58,18 @@ class AboutLists(Koan):
         self.assertEqual([5, 6, 7, 8], list(range(5, 9)))
 
     def test_ranges_with_steps(self):
-        self.assertEqual(__, list(range(0, 8, 2)))
-        self.assertEqual(__, list(range(1, 8, 3)))
-        self.assertEqual(__, list(range(5, -7, -4)))
-        self.assertEqual(__, list(range(5, -8, -4)))
+        self.assertEqual([0, 2, 4, 6], list(range(0, 8, 2)))
+        self.assertEqual([1, 4, 7], list(range(1, 8, 3)))
+        self.assertEqual([5, 1, -3], list(range(5, -7, -4)))
+        self.assertEqual([5, 1, -3, -7], list(range(5, -8, -4)))
 
     def test_insertions(self):
         knight = ['you', 'shall', 'pass']
         knight.insert(2, 'not')
-        self.assertEqual(__, knight)
+        self.assertEqual(['you', 'shall', 'not', 'pass'], knight)
         
         knight.insert(0, 'Arthur')
-        self.assertEqual(__, knight)  
+        self.assertEqual(['Arthur' ,'you', 'shall', 'not', 'pass'], knight)  
             
     def test_popping_lists(self):
         stack = [10, 20, 30, 40]

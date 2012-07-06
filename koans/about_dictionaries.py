@@ -16,7 +16,7 @@ class AboutDictionaries(Koan):
         
     def test_dictionary_literals(self):
         babel_fish = { 'one': "uno", 'two': "dos" }
-        self.assertEqual(__, len(babel_fish))
+        self.assertEqual(2, len(babel_fish))
         
     def test_accessing_dictionaries(self):
         babel_fish = { 'one': "uno", 'two': "dos" }

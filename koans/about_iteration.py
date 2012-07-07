@@ -112,14 +112,14 @@ class AboutIteration(Koan):
         
         comprehension = [delicacy.capitalize() for delicacy in feast]
         
-        self.assertEqual(__, comprehension[0])
-        self.assertEqual(__, comprehension[2])
+        self.assertEqual('Lambs', comprehension[0])
+        self.assertEqual('Orangutans', comprehension[2])
         
     def test_use_pass_for_iterations_with_no_body(self):
         for num in range(1,5):
             pass
                 
-        self.assertEqual(__, num)
+        self.assertEqual(4, num)
 
     # ------------------------------------------------------------------
         

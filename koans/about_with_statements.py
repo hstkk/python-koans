@@ -116,4 +116,4 @@ class AboutWithStatements(Koan):
             return count
     
     def test_open_already_has_its_own_built_in_context_manager(self):
-        self.assertEqual(__, self.count_lines3("example_file.txt"))
+        self.assertEqual(4, self.count_lines3("example_file.txt"))
